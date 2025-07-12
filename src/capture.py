@@ -47,7 +47,7 @@ def main():
         avg_fps = frame_count / elapsed if elapsed > 0 else 0.0
 
         # Object detection
-        dets = predict(frame, conf_thresh=0.3)
+        dets = predict(frame, conf_thresh=0.7)
         t2 = time.time() # Track time after detection
 
         # Overlay for detections
