@@ -1,11 +1,6 @@
 import cv2
 
-# Map some class names to custom colors
-CLASS_COLORS = {
-    'person': (0,0,200),
-    'dog':    (200,0,0),
-    'cat':    (0,200,0),
-}
+from class_colors import CLASS_COLORS
 
 # Handles drawing the overlay
 def draw_detections(frame, detections, inst_fps, avg_fps):
